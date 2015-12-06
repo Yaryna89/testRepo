@@ -3,12 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>BookShop | Books</title>
+    <title>BookShop | Search</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.css"
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="/js/search.js" ></script>
 <body>
 <div id="header-container">
     <header class="wrapper clearfix">
@@ -16,13 +18,19 @@
     </header>
 </div>
 <div id="main-container">
-    <?php $page = 'books';?>
+    <?php $page = 'search';?>
     <?php require_once('navbar.php');?>
     <div id="main" class="wrapper clearfix">
 
         <article>
-
-            <?php require 'get_books_by_author.php'; ?>
+            <div class="form-group">
+                <label for="book">Book</label>
+                <input type="text" id="book" name="book" class="form-control" />
+                <label for="author">Author</label>
+                <input type="text" id="author" name="book" class="form-control" /><br>
+                <button type="button" id="search" class="btn btn-info">Search</button>
+            </div>
+            <div id="response"></div>
         </article>
     </div> <!-- #main -->
 </div> <!-- #main-container -->

@@ -18,10 +18,8 @@ class Books {
 
         $query = "
           SELECT
-            books.id,
-            books.name,
-            authors.id,
-            authors.name
+            books.id AS book_id,
+            books.title AS book_title
           FROM library
           INNER JOIN authors ON authors.id = library.author_id
           INNER JOIN books ON books.id = library.book_id
@@ -29,7 +27,7 @@ class Books {
         ";
         $result = $mysqli->query($query);
         while($row = $result->fetch_object()){
-            $array[$row] = $row;
+            $array[$row->book_id] = $row;
         }
         return $array;
     }

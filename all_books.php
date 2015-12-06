@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>BookShop | Books</title>
+    <title>BookShop | All Books</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width">
@@ -21,9 +21,9 @@
     <div id="main" class="wrapper clearfix">
 
         <article>
-
-            <?php require 'get_books_by_author.php'; ?>
+            <?php require 'get_all_books.php'; ?>
         </article>
+
     </div> <!-- #main -->
 </div> <!-- #main-container -->
 
@@ -32,6 +32,5 @@
         <h3></h3>
     </footer>
 </div>
-
 </body>
 </html>

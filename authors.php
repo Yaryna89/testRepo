@@ -4,7 +4,7 @@ function __autoload($class_name) {
 }
 
 ?>
-<h3>List of Authors:</h3>
+<h3>List of all Authors:</h3>
 
 <?php
   $authors = new Authors();
