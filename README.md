@@ -15,11 +15,15 @@ Backend guys have to write in PHP, frontend guys in JS.
 Because I start travel tomorrow at 10 a.m your time, you will have whole day to those tasks.
 You tasks will be inside personal directories. I will commit them tomorrow, on 8 a.m. your time.
 
+Please use your own branch to commit changes.
+
 Deadline for this task is 17:00 (5 p.m.) your time. If you don't finish, don't worry - I will check your results.
 
 # backend
 
 Backend won't have any automation tests. Your tasks will be focused on simple web app.
+
+Remember, that your tables has to use relations. Your tasks won't mention it, but it's up to you to find right relations.
 
 ## Example of task
 
